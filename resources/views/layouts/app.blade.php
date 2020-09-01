@@ -58,12 +58,12 @@
                   Survey
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="survey/new">Isi Survey Baru</a>
-                  <a class="dropdown-item" href="survey/history">Riwayat Survey</a>
+                  <a class="dropdown-item" href="{{url('survey/new')}}">Isi Survey Baru</a>
+                  <a class="dropdown-item" href="{{url('survey/history')}}">Riwayat Survey</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a href="palindrome-check" class="nav-link">Palindrome Checker</a>
+                <a href="{{url('palindrome-check')}}" class="nav-link">Palindrome Checker</a>
               </li>
               <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
