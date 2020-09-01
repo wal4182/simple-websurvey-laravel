@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +18,7 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container">
 
         <a class="navbar-brand" href="#">Foodnesia</a>
@@ -91,7 +93,7 @@
 
               <div class="col-lg-12">
                 <div class="form-group">
-                  <label for="number-label" class="label">Rate Restoran (1-10)</label><br>
+                  <label for="number-label" class="label">Rate Pelayanan di Foodnesia (1-10)</label><br>
                   <input type="number" class="form-control" name="service_rate" pattern="[0-9]"
                     placeholder="Masukan Rating" min="1" max="10">
 
@@ -199,3 +201,4 @@
   </body>
 
 </html>
+@endsection
