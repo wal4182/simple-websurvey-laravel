@@ -1,14 +1,15 @@
 body {
     font-family: 'Poppins', helvetica;
-
+    overflow-x: hidden;
 }
 
-.navbar {
+#navbar.navbar {
     background-color: black !important;
     z-index: 1;
+    top: 0;
 }
 
-.navbar .btn {
+#navbar.navbar .btn {
     background-color: #FF9204 !important;
     color: white !important;
     border-radius: 30px !important;
@@ -22,16 +23,16 @@ body {
     border: none;
 }
 
-.navbar .nav-item {
+#navbar.navbar .nav-item {
     margin-right: 50px;
     font-size: 12px;
 }
 
-.navbar .navbar-nav {
+#navbar.navbar .navbar-nav {
     margin-left: 200px !important;
 }
 
-.navbar a ::after {
+#navbar.navbar a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -42,7 +43,7 @@ body {
     transition: .5s;
 }
 
-.navbar a ::hover ::after {
+#navbar.navbar a:hover::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -51,7 +52,7 @@ body {
     margin: auto;
 }
 
-.navbar a {
+#navbar.navbar a {
     color: white !important;
     -webkit-transition: .5s;
     transition: .5s;
