@@ -63,11 +63,10 @@ body {
 .header {
     background: url("../img/bg1.jpg");
     background-repeat: no-repeat;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
-    margin-top: -70px;
-    padding-top: 340px;
+    padding-top: 40vh;
 }
 
 #title {
@@ -117,8 +116,7 @@ ul li {
 
 .label {
     color: black;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .form-control {
