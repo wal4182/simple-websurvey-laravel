@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Foodnesia</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
   </head>
 
   <body>
@@ -26,7 +27,7 @@
       <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
           <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'Laravel') }}
+            Foodnesia
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -58,12 +59,12 @@
                   Survey
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="survey/new">Isi Survey Baru</a>
-                  <a class="dropdown-item" href="survey/history">Riwayat Survey</a>
+                  <a class="dropdown-item" href="{{url('survey/new')}}">Isi Survey Baru</a>
+                  <a class="dropdown-item" href="{{url('survey/history')}}">Riwayat Survey</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a href="palindrome-check" class="nav-link">Palindrome Checker</a>
+                <a href="{{url('palindrome-check')}}" class="nav-link">Palindrome Checker</a>
               </li>
               <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -88,7 +89,7 @@
         </div>
       </nav>
 
-      <main class="py-4">
+      <main>
         @yield('content')
       </main>
     </div>
