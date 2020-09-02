@@ -25,6 +25,9 @@ Route::group(['middleware' => ['auth']], function () {
     
     Route::get('survey/new', 'SurveyController@index');
 
+    Route::get('survey/history','SurveyController@history');
+    
     Route::resource('survey', 'SurveyController');
+
 
 });
