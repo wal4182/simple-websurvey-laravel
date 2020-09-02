@@ -19,8 +19,8 @@ class CreateSurveysTable extends Migration
             $table->string('email');
             $table->string('gender');
             $table->string('service_rate');
-            $table->string('fav_food');
-            $table->string('fav_drink');
+            $table->string('fav_food')->nullable();
+            $table->string('fav_drink')->nullable();
             $table->string('recommended');
             $table->string('suggestion');
             $table->timestamps();
