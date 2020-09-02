@@ -15,6 +15,7 @@ class CreateSurveysTable extends Migration
     {
         Schema::create('surveys', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id')->unsigned();
             $table->string('name');
             $table->string('email');
             $table->string('gender');
@@ -24,6 +25,8 @@ class CreateSurveysTable extends Migration
             $table->string('recommended');
             $table->string('suggestion');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
