@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('css')
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
+@endsection
 @section('content')
 @if ($message = Session::get('success'))
 <div class="alert alert-success alert-block text-center">
