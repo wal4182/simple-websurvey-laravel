@@ -33,7 +33,7 @@ class SurveyController extends Controller
             'recommended' => $request->recommended,
             'suggestion'=> $request->suggestion,
         ]);
-        return redirect('survey/new')->with('success','Survey Berhasil Disimpan');
+        return redirect('home')->with('success','Survey Berhasil Disimpan');
         
     }
 }
