@@ -21,4 +21,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('survey/new', 'SurveyController@index');
+Route::group(['middleware' => ['auth']], function () {
+    
+    Route::get('survey/new', 'SurveyController@index');
+
+    Route::resource('survey', 'SurveyController');
+
+});
