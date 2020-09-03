@@ -29,5 +29,5 @@ Route::group(['middleware' => ['auth']], function () {
     
     Route::resource('survey', 'SurveyController');
 
-
+    Route::get('palindrome-check', 'PalindromeController@index');
 });

@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+<title>Foodnesia | Riwayat Survey</title>
+@endsection
 @section('content')
 <div class="container">
   <h3 class="text-center py-3">Riwayat Survey</h3>
