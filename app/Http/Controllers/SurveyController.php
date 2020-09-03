@@ -22,6 +22,17 @@ class SurveyController extends Controller
     //
     public function store(Request $request)
     {
+        // Validation
+        $this->validate($request,[
+            'name' => 'required',
+            'email' => 'required|email',
+            'service_rate' => 'required|numeric',
+            'fav_food' => 'required',
+            'fav_drink' => 'required',
+            'recommended' => 'required',
+            'suggestion' => 'required',
+        ]);
+
         $input_fav_food = $request->input('fav_food');
         $input_fav_drink = $request->input('fav_drink');
         $id = auth()->user()->id;
