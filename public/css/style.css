@@ -9,16 +9,11 @@ body {
     top: 0;
 }
 
-#navbar.navbar .btn {
+a.btn.btn-sm.btn-primary {
     background-color: #FF9204 !important;
     color: white !important;
     border-radius: 30px !important;
-    font-family: roboto !important;
-    font-weight: bold !important;
-    padding: 10 !important;
-    padding-left: 10px !important;
-    width: 120px;
-    height: 40px;
+    padding: 5px 30px;
     font-size: 15px;
     border: none;
 }
@@ -56,7 +51,6 @@ body {
     color: white !important;
     -webkit-transition: .5s;
     transition: .5s;
-    font-weight: bold;
     letter-spacing: 1px;
 }
 
@@ -149,7 +143,7 @@ ul li {
 }
 
 
-.btn {
+.btn.btn-send {
     background: black !important;
     border: medium none;
     border-radius: 0 !important;
