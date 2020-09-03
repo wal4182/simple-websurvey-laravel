@@ -5,6 +5,20 @@
 @section('content')
 <div class="container">
   <h3 class="text-center py-3">Riwayat Survey</h3>
+  <h5>Info User</h5>
+  <table>
+    <tr>
+      <td>Nama User</td>
+      <td>:</td>
+      <td>{{Auth::user()->name}}</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>:</td>
+      <td>{{Auth::user()->email}}</td>
+    </tr>
+  </table>
+  <div class="mb-4"></div>
   <div class="table">
     <table class="table table-bordered">
       <tr class="text-center">
